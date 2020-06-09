@@ -1,4 +1,4 @@
-// solution N(O)
+// solution O(N)
 
 function asteriskBorders(array: string[]): string[]{
     let largestString: number = 0;
@@ -14,6 +14,7 @@ function asteriskBorders(array: string[]): string[]{
 }
 
 // assuming that there is very small words and big words, add spaces so it can be exact square!
+// solution O(N)
 
 function asteriskBordersSquare(array: string[]): string[]{
     let largestString: number = 0;

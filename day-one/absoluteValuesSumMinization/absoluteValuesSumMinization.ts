@@ -1,4 +1,4 @@
-// solution 1 N(O^2)
+// solution 1 O(N^2)
 
 function absoluteValuesSumMinization1(array: number[]): number{
     let winnerIndex: number[] = [];
@@ -21,7 +21,7 @@ function absoluteValuesSumMinization1(array: number[]): number{
     return array[winnerIndex[0]];
 }
 
-// solution 2 N(O)
+// solution 2 O(N)
 
 function absoluteValuesSumMinization2(array: number[]): number{
     // sort array

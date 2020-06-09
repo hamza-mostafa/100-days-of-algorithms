@@ -1,4 +1,4 @@
-// first solution N(O)
+// first solution O(N)
 
 function addAnyAllDigitsInOneNumber(target: number): number {
     let figure: string = target.toString();
@@ -12,7 +12,7 @@ function addAnyAllDigitsInOneNumber(target: number): number {
 
 console.log(addAnyAllDigitsInOneNumber(1234567));
 
-// second solution one line using map and reducer but N(O^2) because type casting.
+// second solution one line using map and reducer but O(N^2) because type casting.
 function addAnyAllDigitsInOneNumberReducer(target: number): number {
     return target.toString().split('').map(x => +x).reduce((accumulator, currentValue): number => {
         return accumulator + currentValue
