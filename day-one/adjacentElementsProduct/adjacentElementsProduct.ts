@@ -2,9 +2,9 @@
 // signed array of number
 // for unsigned array of numbers add Math.abs
 
-function adjacentElementsProduct(array: number[]){
+function adjacentElementsProduct(array: number[]): number[]{
     let largestProduct: number[] = [0,0];
-    for (let i = 0; i+1 < array.length; i++) {
+    for (let i: number = 0; i+1 < array.length; i++) {
         if(largestProduct[0] < (array[i]*array[i+1])){
             largestProduct = [array[i]*array[i+1], i];
             console.log(largestProduct);
