@@ -1,7 +1,7 @@
 // first solution O(N)
 
 function almostIncreasingSequence(array: number[]): boolean {
-    for (let i = 1; i+1 < array.length; i++) {
+    for (let i:number = 1; i+1 < array.length; i++) {
         if((array[i-1] >= array[i]) && (array[i] > array[i+1])){
             return false;
         }
