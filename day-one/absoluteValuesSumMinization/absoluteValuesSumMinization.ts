@@ -2,9 +2,9 @@
 
 function absoluteValuesSumMinization1(array: number[]): number{
     let winnerIndex: number[] = [];
-    for (let i = 0; i < array.length; i++) {
-        let totalSumsOfVariable = 0;
-        for (let j = 0; j < array.length; j++) {
+    for (let i: number = 0; i < array.length; i++) {
+        let totalSumsOfVariable: number = 0;
+        for (let j: number = 0; j < array.length; j++) {
             totalSumsOfVariable += Math.abs(array[j] - array[i]);
             if(i === 0){
                 winnerIndex[1] = totalSumsOfVariable;

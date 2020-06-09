@@ -2,12 +2,12 @@
 
 function asteriskBorders(array: string[]): string[]{
     let largestString: number = 0;
-    for (let i = 0; i < array.length; i++) {
+    for (let i: number = 0; i < array.length; i++) {
         array[i] = `*${array[i]}*`;
         largestString = largestString > array[i].length ? largestString : array[i].length;
     }
     // @ts-ignore
-    let border = '*'.repeat(largestString);
+    let border: string = '*'.repeat(largestString);
     array.unshift(border);
     array[array.length] = border;
     return array;
@@ -17,14 +17,14 @@ function asteriskBorders(array: string[]): string[]{
 
 function asteriskBordersSquare(array: string[]): string[]{
     let largestString: number = 0;
-    for (let i = 0; i < array.length; i++) {
+    for (let i: number = 0; i < array.length; i++) {
         largestString = largestString > array[i].length ? largestString : array[i].length;
         // largestString = largestString % 2 ? largestString+2 : largestString+;
     }
     console.log(largestString);
-    for (let i = 0; i < array.length; i++) {
+    for (let i: number = 0; i < array.length; i++) {
         if(largestString > array[i].length){
-            let addition = Math.floor(largestString - array.length/2);
+            let addition : number = Math.floor(largestString - array.length/2);
 
             // fixing even number issue in dividing the white spaces
             // the first condition to make sure that if there is only string of 2 char
@@ -42,7 +42,7 @@ function asteriskBordersSquare(array: string[]): string[]{
         }
     }
     // @ts-ignore
-    let border = '*'.repeat(largestString+2);
+    let border: string = '*'.repeat(largestString+2);
     array.unshift(border);
     array[array.length] = border;
     return array;
