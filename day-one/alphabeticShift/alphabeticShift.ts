@@ -1,5 +1,5 @@
-// first solution O(N), but with javascript split and join, and this causes another O(n)x2
-// so the total will be O(N)x3
+// first solution O(N), but with javascript split and join,
+// so the total will be O(N)
 
 function alphabeticShift(word: string, shiftBy: number): string {
     let wordCharArray: string[] = word.split('');
